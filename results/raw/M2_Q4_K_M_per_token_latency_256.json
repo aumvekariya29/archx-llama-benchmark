@@ -1,0 +1,24 @@
+{
+  "platform": "M2",
+  "precision": "Q4_K_M",
+  "test_type": "per_token_latency",
+  "parameter_name": "context_length",
+  "parameter_value": 256,
+  "trial_result": {
+    "values": [
+      13.1657,
+      13.148,
+      13.1634,
+      13.1553,
+      13.1571,
+      13.163,
+      13.1428
+    ],
+    "median": 13.1571,
+    "p95": 13.165,
+    "p99": 13.1656,
+    "std": 0.0085,
+    "unit": "ms"
+  },
+  "timestamp": "2026-04-13T20:27:49"
+}

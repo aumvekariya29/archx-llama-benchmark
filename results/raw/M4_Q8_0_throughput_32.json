@@ -1,0 +1,27 @@
+{
+  "platform": "M4",
+  "precision": "Q8_0",
+  "test_type": "throughput",
+  "parameter_name": "output_length",
+  "parameter_value": 32,
+  "trial_result": {
+    "values": [
+      59.4614,
+      59.4226,
+      59.4201,
+      59.5529,
+      59.4987,
+      59.4731,
+      59.3789,
+      59.4947,
+      59.4888,
+      59.3973
+    ],
+    "median": 59.4672,
+    "p95": 59.5285,
+    "p99": 59.548,
+    "std": 0.0536,
+    "unit": "tokens/s"
+  },
+  "timestamp": "2026-04-14T11:17:27"
+}

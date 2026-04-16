@@ -1,0 +1,410 @@
+[
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 64,
+    "trial_result": {
+      "values": [
+        70.8425,
+        70.6487,
+        70.6928,
+        70.729,
+        70.832,
+        70.7147,
+        70.6818,
+        70.7647,
+        70.922,
+        70.7268
+      ],
+      "median": 70.7279,
+      "p95": 70.8862,
+      "p99": 70.9149,
+      "std": 0.0851,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 128,
+    "trial_result": {
+      "values": [
+        134.4053,
+        134.3976,
+        134.4051,
+        134.4008,
+        134.3705,
+        134.3815,
+        134.4231
+      ],
+      "median": 134.4008,
+      "p95": 134.4178,
+      "p99": 134.4221,
+      "std": 0.0172,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 256,
+    "trial_result": {
+      "values": [
+        261.8826,
+        262.0907,
+        262.0598,
+        262.0195,
+        262.078,
+        262.0385,
+        262.1406,
+        262.1405
+      ],
+      "median": 262.0689,
+      "p95": 262.1406,
+      "p99": 262.1406,
+      "std": 0.0825,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 512,
+    "trial_result": {
+      "values": [
+        543.7321,
+        545.5929,
+        542.5203,
+        544.6699,
+        542.5294,
+        544.804
+      ],
+      "median": 544.201,
+      "p95": 545.3957,
+      "p99": 545.5534,
+      "std": 1.2691,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 1024,
+    "trial_result": {
+      "values": [
+        1099.2447,
+        1103.5754,
+        1113.1381,
+        1107.4696,
+        1097.3979,
+        1095.5629,
+        1095.6332,
+        1094.6881
+      ],
+      "median": 1098.3213,
+      "p95": 1111.1541,
+      "p99": 1112.7413,
+      "std": 6.6534,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 64,
+    "trial_result": {
+      "values": [
+        12.2453,
+        12.3656,
+        12.3912,
+        12.253,
+        12.409,
+        12.2358,
+        12.216,
+        12.1435,
+        12.1333
+      ],
+      "median": 12.2453,
+      "p95": 12.4019,
+      "p99": 12.4076,
+      "std": 0.1016,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 128,
+    "trial_result": {
+      "values": [
+        11.797,
+        11.9335,
+        12.0147,
+        12.2132,
+        12.3382,
+        12.0499,
+        12.3658,
+        12.813,
+        12.0604
+      ],
+      "median": 12.0604,
+      "p95": 12.6341,
+      "p99": 12.7773,
+      "std": 0.3015,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 256,
+    "trial_result": {
+      "values": [
+        13.1657,
+        13.148,
+        13.1634,
+        13.1553,
+        13.1571,
+        13.163,
+        13.1428
+      ],
+      "median": 13.1571,
+      "p95": 13.165,
+      "p99": 13.1656,
+      "std": 0.0085,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 512,
+    "trial_result": {
+      "values": [
+        13.9706,
+        13.9651,
+        13.9644,
+        13.9713,
+        13.9728,
+        13.9743,
+        13.9717,
+        13.9687,
+        13.9699
+      ],
+      "median": 13.9706,
+      "p95": 13.9737,
+      "p99": 13.9742,
+      "std": 0.0033,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 1024,
+    "trial_result": {
+      "values": [
+        15.5432,
+        15.5396,
+        15.5376,
+        15.5406,
+        15.5382,
+        15.5343,
+        15.5333,
+        15.5364,
+        15.5342
+      ],
+      "median": 15.5376,
+      "p95": 15.5421,
+      "p99": 15.543,
+      "std": 0.0033,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "e2e_latency",
+    "parameter_name": "output_length",
+    "parameter_value": 32,
+    "trial_result": {
+      "values": [
+        508.7092,
+        509.0352,
+        508.734,
+        508.9936,
+        508.8344,
+        508.9152,
+        508.5013,
+        508.8404,
+        508.7779,
+        509.2866
+      ],
+      "median": 508.8374,
+      "p95": 509.1735,
+      "p99": 509.264,
+      "std": 0.2131,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "e2e_latency",
+    "parameter_name": "output_length",
+    "parameter_value": 64,
+    "trial_result": {
+      "values": [
+        894.814,
+        894.6364,
+        894.9182,
+        894.735,
+        898.4075,
+        899.1871,
+        891.8205,
+        891.1634
+      ],
+      "median": 894.7745,
+      "p95": 898.9142,
+      "p99": 899.1325,
+      "std": 2.7827,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "e2e_latency",
+    "parameter_name": "output_length",
+    "parameter_value": 128,
+    "trial_result": {
+      "values": [
+        1669.0158,
+        1668.3461,
+        1668.8551,
+        1669.1646,
+        1668.8446,
+        1668.7555,
+        1668.8628,
+        1668.6168
+      ],
+      "median": 1668.8499,
+      "p95": 1669.1125,
+      "p99": 1669.1542,
+      "std": 0.2477,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "throughput",
+    "parameter_name": "output_length",
+    "parameter_value": 32,
+    "trial_result": {
+      "values": [
+        62.8312,
+        62.8158,
+        62.8702,
+        63.6589,
+        62.8586,
+        63.4378,
+        62.9236,
+        62.9144,
+        62.8336
+      ],
+      "median": 62.8702,
+      "p95": 63.5705,
+      "p99": 63.6412,
+      "std": 0.309,
+      "unit": "tokens/s"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "throughput",
+    "parameter_name": "output_length",
+    "parameter_value": 64,
+    "trial_result": {
+      "values": [
+        71.5531,
+        71.4878,
+        71.5271,
+        71.5257,
+        71.5059,
+        71.5042,
+        71.6276,
+        71.4951,
+        71.5618
+      ],
+      "median": 71.5257,
+      "p95": 71.6013,
+      "p99": 71.6224,
+      "std": 0.0437,
+      "unit": "tokens/s"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  },
+  {
+    "platform": "M2",
+    "precision": "Q4_K_M",
+    "test_type": "throughput",
+    "parameter_name": "output_length",
+    "parameter_value": 128,
+    "trial_result": {
+      "values": [
+        77.1853,
+        77.3149,
+        76.6565,
+        76.6607,
+        76.6653,
+        76.7339,
+        77.5513,
+        76.7287,
+        76.6995,
+        77.2043
+      ],
+      "median": 76.7313,
+      "p95": 77.4449,
+      "p99": 77.53,
+      "std": 0.3372,
+      "unit": "tokens/s"
+    },
+    "timestamp": "2026-04-13T20:27:49"
+  }
+]

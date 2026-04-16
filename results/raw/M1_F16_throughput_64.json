@@ -1,0 +1,26 @@
+{
+  "platform": "M1",
+  "precision": "F16",
+  "test_type": "throughput",
+  "parameter_name": "output_length",
+  "parameter_value": 64,
+  "trial_result": {
+    "values": [
+      19.042,
+      21.8698,
+      22.0977,
+      22.5739,
+      20.1315,
+      20.3508,
+      20.9705,
+      22.2277,
+      22.8615
+    ],
+    "median": 21.8698,
+    "p95": 22.7465,
+    "p99": 22.8385,
+    "std": 1.2911,
+    "unit": "tokens/s"
+  },
+  "timestamp": "2026-04-14T11:11:14"
+}

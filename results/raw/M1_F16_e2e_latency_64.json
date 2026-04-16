@@ -1,0 +1,27 @@
+{
+  "platform": "M1",
+  "precision": "F16",
+  "test_type": "e2e_latency",
+  "parameter_name": "output_length",
+  "parameter_value": 64,
+  "trial_result": {
+    "values": [
+      2796.6209,
+      2796.4893,
+      2787.346,
+      2779.3731,
+      2777.7619,
+      2797.6164,
+      2779.3925,
+      2791.0181,
+      2786.363,
+      2802.89
+    ],
+    "median": 2789.1821,
+    "p95": 2800.5169,
+    "p99": 2802.4154,
+    "std": 8.8444,
+    "unit": "ms"
+  },
+  "timestamp": "2026-04-14T11:11:14"
+}

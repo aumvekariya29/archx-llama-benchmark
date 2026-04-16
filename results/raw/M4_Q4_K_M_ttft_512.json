@@ -1,0 +1,27 @@
+{
+  "platform": "M4",
+  "precision": "Q4_K_M",
+  "test_type": "ttft",
+  "parameter_name": "prompt_length",
+  "parameter_value": 512,
+  "trial_result": {
+    "values": [
+      345.6019,
+      344.8938,
+      345.6885,
+      345.144,
+      345.6503,
+      345.0358,
+      345.6919,
+      345.3093,
+      344.6412,
+      345.7963
+    ],
+    "median": 345.4556,
+    "p95": 345.7493,
+    "p99": 345.7869,
+    "std": 0.3996,
+    "unit": "ms"
+  },
+  "timestamp": "2026-04-14T11:15:11"
+}

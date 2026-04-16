@@ -1,0 +1,27 @@
+{
+  "platform": "M4",
+  "precision": "F16",
+  "test_type": "ttft",
+  "parameter_name": "prompt_length",
+  "parameter_value": 512,
+  "trial_result": {
+    "values": [
+      324.1717,
+      324.1702,
+      323.1155,
+      323.7658,
+      323.6492,
+      323.5226,
+      322.4268,
+      323.0998,
+      323.2291,
+      322.8791
+    ],
+    "median": 323.3759,
+    "p95": 324.1711,
+    "p99": 324.1716,
+    "std": 0.5596,
+    "unit": "ms"
+  },
+  "timestamp": "2026-04-14T11:20:29"
+}

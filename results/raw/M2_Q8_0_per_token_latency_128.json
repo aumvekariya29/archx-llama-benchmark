@@ -1,0 +1,27 @@
+{
+  "platform": "M2",
+  "precision": "Q8_0",
+  "test_type": "per_token_latency",
+  "parameter_name": "context_length",
+  "parameter_value": 128,
+  "trial_result": {
+    "values": [
+      18.6893,
+      18.6978,
+      18.7024,
+      18.683,
+      18.6919,
+      18.6642,
+      18.599,
+      18.5999,
+      18.6315,
+      18.6179
+    ],
+    "median": 18.6736,
+    "p95": 18.7003,
+    "p99": 18.702,
+    "std": 0.0415,
+    "unit": "ms"
+  },
+  "timestamp": "2026-04-13T20:32:00"
+}

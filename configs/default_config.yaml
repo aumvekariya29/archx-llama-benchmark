@@ -1,0 +1,99 @@
+# ArchX Benchmark Configuration
+# All benchmark parameters are configurable here — nothing is hardcoded.
+
+# ---------------------------------------------------------------------------
+# Platform settings
+# ---------------------------------------------------------------------------
+platforms:
+  supported:
+    - M1
+    - M2
+    - M4
+  backend: Metal  # Apple Silicon uses Metal/MPS exclusively
+
+# ---------------------------------------------------------------------------
+# Model settings
+# ---------------------------------------------------------------------------
+model:
+  hf_repo: "bartowski/Llama-3.2-1B-Instruct-GGUF"
+  hf_model_id: "meta-llama/Llama-3.2-1B"
+  precision_files:
+    F16: "Llama-3.2-1B-Instruct-f16.gguf"
+    Q8_0: "Llama-3.2-1B-Instruct-Q8_0.gguf"
+    Q4_K_M: "Llama-3.2-1B-Instruct-Q4_K_M.gguf"
+  models_dir: "models"
+  n_ctx: 2048
+
+# ---------------------------------------------------------------------------
+# Model dimensions (LLaMA 3.2-1B)
+# ---------------------------------------------------------------------------
+model_dimensions:
+  layers: 16
+  hidden: 2048
+  heads: 32
+  kv_heads: 8
+  head_dim: 64
+  ffn_intermediate: 8192
+  vocab: 128256
+  param_count: 1.24e9  # approximate total parameters
+
+# ---------------------------------------------------------------------------
+# Benchmark parameters (Phase 1)
+# ---------------------------------------------------------------------------
+benchmark:
+  warmup_runs: 3
+  timed_trials: 10
+  iqr_multiplier: 1.5
+  prompt_lengths:
+    - 64
+    - 128
+    - 256
+    - 512
+    - 1024
+  context_lengths:
+    - 64
+    - 128
+    - 256
+    - 512
+    - 1024
+  output_lengths:
+    - 32
+    - 64
+    - 128
+
+# ---------------------------------------------------------------------------
+# Decomposition parameters (Phase 2)
+# ---------------------------------------------------------------------------
+decomposition:
+  decode_steps: 30
+  warmup_passes: 3
+  prompt: "The future of artificial intelligence is"
+
+# ---------------------------------------------------------------------------
+# Output paths
+# ---------------------------------------------------------------------------
+output:
+  raw_dir: "results/raw"
+  decomposition_dir: "results/decomposition"
+  summary_csv: "results/summary.csv"
+  plots_dir: "plots"
+
+# ---------------------------------------------------------------------------
+# Visualization settings (Phase 3)
+# ---------------------------------------------------------------------------
+visualization:
+  dpi: 300
+  fig_size: [8, 5]
+  font_family: "serif"
+  platform_colors:
+    M1: "#2E5090"
+    M2: "#C0392B"
+    M4: "#27AE60"
+  peak_memory_bandwidth_gbs:
+    M1: 68.25
+    M2: 100.0
+    M4: 120.0
+  peak_compute_gflops_fp16:
+    M1: 2600.0
+    M2: 3600.0
+    M4: 4600.0

@@ -1,0 +1,27 @@
+{
+  "platform": "M2",
+  "precision": "Q4_K_M",
+  "test_type": "throughput",
+  "parameter_name": "output_length",
+  "parameter_value": 128,
+  "trial_result": {
+    "values": [
+      77.1853,
+      77.3149,
+      76.6565,
+      76.6607,
+      76.6653,
+      76.7339,
+      77.5513,
+      76.7287,
+      76.6995,
+      77.2043
+    ],
+    "median": 76.7313,
+    "p95": 77.4449,
+    "p99": 77.53,
+    "std": 0.3372,
+    "unit": "tokens/s"
+  },
+  "timestamp": "2026-04-13T20:27:49"
+}

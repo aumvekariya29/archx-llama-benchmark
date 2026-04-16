@@ -1,0 +1,24 @@
+{
+  "platform": "M2",
+  "precision": "Q8_0",
+  "test_type": "e2e_latency",
+  "parameter_name": "output_length",
+  "parameter_value": 64,
+  "trial_result": {
+    "values": [
+      1303.5623,
+      1297.7517,
+      1299.3597,
+      1298.926,
+      1299.3727,
+      1296.1528,
+      1297.7586
+    ],
+    "median": 1298.926,
+    "p95": 1302.3054,
+    "p99": 1303.3109,
+    "std": 2.3199,
+    "unit": "ms"
+  },
+  "timestamp": "2026-04-13T20:32:00"
+}

@@ -1,0 +1,99 @@
+{
+  "platform": "M4",
+  "precision": "float16",
+  "model": "meta-llama/Llama-3.2-1B",
+  "decode_steps": 30,
+  "device": "mps",
+  "model_dimensions": {
+    "layers": 16,
+    "hidden": 2048,
+    "heads": 32,
+    "kv_heads": 8,
+    "head_dim": 64,
+    "ffn_intermediate": 8192,
+    "vocab": 128256
+  },
+  "components": {
+    "embedding": {
+      "total_ms": 47.575,
+      "mean_per_step_ms": 1.5858,
+      "std_ms": 7.4084,
+      "pct_of_total": 1.42,
+      "arithmetic_intensity_flop_per_byte": 0.0,
+      "flops_per_step": 0,
+      "bytes_per_step": 4096
+    },
+    "layernorm": {
+      "total_ms": 408.1717,
+      "mean_per_step_ms": 0.4123,
+      "std_ms": 3.8384,
+      "pct_of_total": 12.17,
+      "arithmetic_intensity_flop_per_byte": 1.0,
+      "flops_per_step": 135168,
+      "bytes_per_step": 135168
+    },
+    "qkv_proj": {
+      "total_ms": 499.0261,
+      "mean_per_step_ms": 0.3465,
+      "std_ms": 3.0013,
+      "pct_of_total": 14.88,
+      "arithmetic_intensity_flop_per_byte": 1.0,
+      "flops_per_step": 201326592,
+      "bytes_per_step": 201326592
+    },
+    "attn_core": {
+      "total_ms": 228.9656,
+      "mean_per_step_ms": 7.6322,
+      "std_ms": 0.0,
+      "pct_of_total": 6.83,
+      "arithmetic_intensity_flop_per_byte": 4.0,
+      "flops_per_step": 16777216,
+      "bytes_per_step": 4194304
+    },
+    "o_proj": {
+      "total_ms": 158.8879,
+      "mean_per_step_ms": 0.331,
+      "std_ms": 0.0447,
+      "pct_of_total": 4.74,
+      "arithmetic_intensity_flop_per_byte": 1.0,
+      "flops_per_step": 134217728,
+      "bytes_per_step": 134217728
+    },
+    "mlp": {
+      "total_ms": 995.3481,
+      "mean_per_step_ms": 0.6912,
+      "std_ms": 2.511,
+      "pct_of_total": 29.68,
+      "arithmetic_intensity_flop_per_byte": 1.0,
+      "flops_per_step": 1610612736,
+      "bytes_per_step": 1610612736
+    },
+    "lm_head": {
+      "total_ms": 167.8161,
+      "mean_per_step_ms": 5.5939,
+      "std_ms": 0.1858,
+      "pct_of_total": 5.0,
+      "arithmetic_intensity_flop_per_byte": 1.0,
+      "flops_per_step": 525336576,
+      "bytes_per_step": 525336576
+    },
+    "framework_overhead": {
+      "total_ms": 847.4995,
+      "mean_per_step_ms": 28.25,
+      "std_ms": 0.0,
+      "pct_of_total": 25.27,
+      "arithmetic_intensity_flop_per_byte": null,
+      "flops_per_step": null,
+      "bytes_per_step": null
+    },
+    "total": {
+      "total_ms": 3353.2899,
+      "mean_per_step_ms": 111.7763,
+      "std_ms": 0.0,
+      "pct_of_total": 100.0,
+      "arithmetic_intensity_flop_per_byte": null,
+      "flops_per_step": null,
+      "bytes_per_step": null
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "platform": "M1",
+  "precision": "Q4_simulated",
+  "model": "meta-llama/Llama-3.2-1B",
+  "decode_steps": 30,
+  "device": "mps",
+  "model_dimensions": {
+    "layers": 16,
+    "hidden": 2048,
+    "heads": 32,
+    "kv_heads": 8,
+    "head_dim": 64,
+    "ffn_intermediate": 8192,
+    "vocab": 128256
+  },
+  "note": "Simulated from float16 decomposition scaled by Q4/F16 PTL ratio (0.411)",
+  "components": {
+    "embedding": {
+      "total_ms": 34.1118,
+      "mean_per_step_ms": 1.1371,
+      "pct_of_total": 0.98,
+      "arithmetic_intensity_flop_per_byte": 0.0
+    },
+    "layernorm": {
+      "total_ms": 417.7588,
+      "mean_per_step_ms": 13.9253,
+      "pct_of_total": 12.05,
+      "arithmetic_intensity_flop_per_byte": 4.0
+    },
+    "qkv_proj": {
+      "total_ms": 348.1205,
+      "mean_per_step_ms": 11.604,
+      "pct_of_total": 10.04,
+      "arithmetic_intensity_flop_per_byte": 4.0
+    },
+    "attn_core": {
+      "total_ms": 356.956,
+      "mean_per_step_ms": 11.8985,
+      "pct_of_total": 10.3,
+      "arithmetic_intensity_flop_per_byte": 16.0
+    },
+    "o_proj": {
+      "total_ms": 119.3813,
+      "mean_per_step_ms": 3.9794,
+      "pct_of_total": 3.44,
+      "arithmetic_intensity_flop_per_byte": 4.0
+    },
+    "mlp": {
+      "total_ms": 692.5711,
+      "mean_per_step_ms": 23.0857,
+      "pct_of_total": 19.98,
+      "arithmetic_intensity_flop_per_byte": 4.0
+    },
+    "lm_head": {
+      "total_ms": 135.7908,
+      "mean_per_step_ms": 4.5264,
+      "pct_of_total": 3.92,
+      "arithmetic_intensity_flop_per_byte": 4.0
+    },
+    "framework_overhead": {
+      "total_ms": 1361.3864,
+      "mean_per_step_ms": 45.3795,
+      "pct_of_total": 39.28
+    },
+    "total": {
+      "total_ms": 3466.0767,
+      "mean_per_step_ms": 115.5359,
+      "pct_of_total": 100.0
+    }
+  }
+}

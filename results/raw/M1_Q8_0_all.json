@@ -1,0 +1,421 @@
+[
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 64,
+    "trial_result": {
+      "values": [
+        76.053,
+        76.0432,
+        75.5581,
+        76.2872,
+        76.3214,
+        76.7508,
+        76.3714,
+        76.7768,
+        76.4952
+      ],
+      "median": 76.3214,
+      "p95": 76.7664,
+      "p99": 76.7747,
+      "std": 0.3794,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 128,
+    "trial_result": {
+      "values": [
+        139.479,
+        140.1234,
+        140.2278,
+        139.3295,
+        140.4351,
+        139.0536,
+        139.1256,
+        138.3343,
+        139.4575
+      ],
+      "median": 139.4575,
+      "p95": 140.3522,
+      "p99": 140.4185,
+      "std": 0.6635,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 256,
+    "trial_result": {
+      "values": [
+        272.4118,
+        271.5825,
+        271.9094,
+        271.6432,
+        269.1103,
+        278.0108,
+        279.4957,
+        287.582,
+        282.3577
+      ],
+      "median": 272.4118,
+      "p95": 285.4923,
+      "p99": 287.164,
+      "std": 6.1887,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 512,
+    "trial_result": {
+      "values": [
+        573.7338,
+        580.4366,
+        585.3861,
+        579.102,
+        576.9531,
+        574.638,
+        572.2848,
+        569.5923,
+        569.4037,
+        569.5388
+      ],
+      "median": 574.1859,
+      "p95": 583.1589,
+      "p99": 584.9407,
+      "std": 5.3484,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "ttft",
+    "parameter_name": "prompt_length",
+    "parameter_value": 1024,
+    "trial_result": {
+      "values": [
+        1176.6779,
+        1189.2172,
+        1200.8255,
+        1183.4771,
+        1179.0729,
+        1185.1197,
+        1191.5986,
+        1174.295,
+        1177.2019,
+        1174.6446
+      ],
+      "median": 1181.275,
+      "p95": 1196.6734,
+      "p99": 1199.9951,
+      "std": 8.623,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 64,
+    "trial_result": {
+      "values": [
+        24.7525,
+        24.538,
+        24.8106,
+        24.5267,
+        24.4895,
+        24.5779,
+        24.7781,
+        24.675
+      ],
+      "median": 24.6265,
+      "p95": 24.7992,
+      "p99": 24.8083,
+      "std": 0.1263,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 128,
+    "trial_result": {
+      "values": [
+        24.7878,
+        24.6762,
+        24.5611,
+        24.7537,
+        24.9304,
+        25.0034,
+        24.9781,
+        25.08,
+        24.8815
+      ],
+      "median": 24.8815,
+      "p95": 25.0494,
+      "p99": 25.0739,
+      "std": 0.1685,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 256,
+    "trial_result": {
+      "values": [
+        25.9519,
+        26.024,
+        26.5434,
+        26.682,
+        26.2035,
+        25.7701,
+        25.9971,
+        26.6868,
+        25.9768
+      ],
+      "median": 26.024,
+      "p95": 26.6849,
+      "p99": 26.6864,
+      "std": 0.3456,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 512,
+    "trial_result": {
+      "values": [
+        27.1979,
+        27.237,
+        26.6669,
+        27.0042,
+        27.5507,
+        26.8101,
+        26.9903,
+        27.2394,
+        27.0853
+      ],
+      "median": 27.0853,
+      "p95": 27.4262,
+      "p99": 27.5258,
+      "std": 0.2604,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "per_token_latency",
+    "parameter_name": "context_length",
+    "parameter_value": 1024,
+    "trial_result": {
+      "values": [
+        28.57,
+        28.4231,
+        28.7164,
+        28.321,
+        28.3718,
+        28.3837,
+        28.4414,
+        28.793,
+        28.328
+      ],
+      "median": 28.4231,
+      "p95": 28.7623,
+      "p99": 28.7868,
+      "std": 0.1717,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "e2e_latency",
+    "parameter_name": "output_length",
+    "parameter_value": 32,
+    "trial_result": {
+      "values": [
+        891.481,
+        897.1429,
+        893.2272,
+        920.3602,
+        919.796,
+        916.6739,
+        909.6703,
+        881.4212,
+        878.7253,
+        889.268
+      ],
+      "median": 895.185,
+      "p95": 920.1063,
+      "p99": 920.3094,
+      "std": 15.6951,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "e2e_latency",
+    "parameter_name": "output_length",
+    "parameter_value": 64,
+    "trial_result": {
+      "values": [
+        1656.8297,
+        1659.4775,
+        1639.0001,
+        1644.6906,
+        1708.6202,
+        1710.354,
+        1735.5865,
+        1685.8899,
+        1714.144,
+        1728.3696
+      ],
+      "median": 1697.2551,
+      "p95": 1732.3389,
+      "p99": 1734.937,
+      "std": 35.8515,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "e2e_latency",
+    "parameter_name": "output_length",
+    "parameter_value": 128,
+    "trial_result": {
+      "values": [
+        3296.872,
+        3268.2589,
+        3289.1752,
+        3635.882,
+        3777.5714,
+        3843.4975,
+        3673.3981,
+        3447.6742,
+        3975.8892,
+        3795.1151
+      ],
+      "median": 3654.64,
+      "p95": 3916.313,
+      "p99": 3963.974,
+      "std": 257.9003,
+      "unit": "ms"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "throughput",
+    "parameter_name": "output_length",
+    "parameter_value": 32,
+    "trial_result": {
+      "values": [
+        35.1119,
+        35.5989,
+        35.7037,
+        35.3523,
+        35.7335,
+        35.3815,
+        35.7149,
+        35.7181,
+        35.3262
+      ],
+      "median": 35.5989,
+      "p95": 35.7274,
+      "p99": 35.7323,
+      "std": 0.2275,
+      "unit": "tokens/s"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "throughput",
+    "parameter_name": "output_length",
+    "parameter_value": 64,
+    "trial_result": {
+      "values": [
+        37.7238,
+        38.3083,
+        37.8434,
+        37.8148,
+        38.022,
+        37.9208,
+        37.8892,
+        38.0545,
+        38.2425
+      ],
+      "median": 37.9208,
+      "p95": 38.282,
+      "p99": 38.3031,
+      "std": 0.196,
+      "unit": "tokens/s"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  },
+  {
+    "platform": "M1",
+    "precision": "Q8_0",
+    "test_type": "throughput",
+    "parameter_name": "output_length",
+    "parameter_value": 128,
+    "trial_result": {
+      "values": [
+        39.7146,
+        39.5453,
+        39.1673,
+        39.0904,
+        39.3337,
+        39.4746,
+        39.5363,
+        39.5885
+      ],
+      "median": 39.5054,
+      "p95": 39.6705,
+      "p99": 39.7058,
+      "std": 0.2159,
+      "unit": "tokens/s"
+    },
+    "timestamp": "2026-04-14T11:06:03"
+  }
+]
