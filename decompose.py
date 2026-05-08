@@ -177,8 +177,6 @@ def derive_attn_core(profiler: ComponentProfiler, model: torch.nn.Module, device
 
     Returns total attn_core time in ms across all steps.
     """
-    attn_times: list[float] = []
-
     def make_pre(store):
         def hook(mod, inp):
             sync_device(device)
@@ -506,7 +504,6 @@ def run_decomposition(
     for comp in component_order:
         c = results["components"][comp]
         ai_str = f"{c['arithmetic_intensity_flop_per_byte']:.1f}" if c["arithmetic_intensity_flop_per_byte"] is not None else "-"
-        sep = "=" if comp == "total" else " "
         if comp == "total":
             print("-" * 65)
         print(f"{comp:<22} {c['total_ms']:>10.2f} {c['mean_per_step_ms']:>10.2f} {c['pct_of_total']:>7.1f}%  {ai_str:>8}")

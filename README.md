@@ -225,6 +225,25 @@ All parameters are defined in `configs/default_config.yaml`:
 - Visualization settings (DPI, colors, peak hardware specs)
 - Model dimensions for arithmetic intensity calculations
 
+## Third-Party Credits
+
+This project uses the following third-party models and libraries:
+
+| Resource | Source | License |
+|----------|--------|---------|
+| **LLaMA 3.2-1B** base model | [meta-llama/Llama-3.2-1B](https://huggingface.co/meta-llama/Llama-3.2-1B) — Meta AI | Llama 3.2 Community License |
+| **Llama-3.2-1B-Instruct GGUF** quantizations (F16, Q8_0, Q4_K_M) | [bartowski/Llama-3.2-1B-Instruct-GGUF](https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF) — bartowski | Llama 3.2 Community License |
+| **llama-cpp-python** | [abetlen/llama-cpp-python](https://github.com/abetlen/llama-cpp-python) | MIT |
+| **Hugging Face Transformers** | [huggingface/transformers](https://github.com/huggingface/transformers) | Apache 2.0 |
+| **Hugging Face Hub** | [huggingface/huggingface_hub](https://github.com/huggingface/huggingface_hub) | Apache 2.0 |
+| **PyTorch** | [pytorch/pytorch](https://github.com/pytorch/pytorch) | BSD-style |
+| **Matplotlib** | [matplotlib/matplotlib](https://github.com/matplotlib/matplotlib) | PSF-based |
+| **Seaborn** | [mwaskom/seaborn](https://github.com/mwaskom/seaborn) | BSD |
+| **NumPy** | [numpy/numpy](https://github.com/numpy/numpy) | BSD |
+| **pandas** | [pandas-dev/pandas](https://github.com/pandas-dev/pandas) | BSD |
+
+No source code from any third-party project was copied or adapted. All benchmark logic, decomposition methodology, and visualization code is original work by the project team.
+
 ## License
 
 This project is for academic research purposes (CSULB CECS 551).
