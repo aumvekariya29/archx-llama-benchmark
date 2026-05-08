@@ -11,13 +11,25 @@ A comprehensive benchmarking harness for measuring LLaMA 3.2-1B token generation
 
 ---
 
+> **Quick Review (no setup needed):** All pre-generated results are in [`results/`](results/) and all 8 plots are in [`plots/`](plots/). You can review the full benchmark output without running anything.
+
+---
+
+### System Requirements
+- **OS:** macOS 13+ on Apple Silicon (M1, M2, or M4) — does not run on Intel Mac, Windows, or Linux
+- **Python:** 3.10 or newer
+- **Disk:** ~6 GB free (for model files)
+- **Tools:** Xcode Command Line Tools, a free HuggingFace account (model license approval required)
+
+---
+
 ## Key Findings
 
 | Metric (median, Q4_K_M) | M1 | M2 | M4 |
 |---|---|---|---|
-| Per-Token Latency @ ctx=128 | — | 12.06 ms | — |
-| Throughput @ out=128 | — | 76.7 tok/s | — |
-| Quantization Speedup (FP16/Q4) | — | 2.30x | — |
+| Per-Token Latency @ ctx=128 | 17.39 ms | 12.06 ms | 9.78 ms |
+| Throughput @ out=128 | 54.6 tok/s | 76.7 tok/s | 97.2 tok/s |
+| Quantization Speedup (FP16→Q4) | 2.43x | 2.30x | 2.59x |
 | BW Utilization (FP16) | — | 89.4% | — |
 
 *Table auto-updates as results from additional platforms are added.*
@@ -39,12 +51,13 @@ Each configuration runs **3 warm-up + 10 timed trials** with **IQR-based outlier
 
 - macOS on Apple Silicon (M1, M2, or M4)
 - Python 3.10+
-- Xcode Command Line Tools (`xcode-select --install`)
+- Xcode Command Line Tools: `xcode-select --install`
+- CMake: `brew install cmake` (required to compile llama-cpp-python from source)
 
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/your-repo/archx-llama-benchmark.git
+git clone https://github.com/aumvekariya29/archx-llama-benchmark.git
 cd archx-llama-benchmark
 
 python3 -m venv .venv && source .venv/bin/activate
@@ -57,6 +70,8 @@ pip install -r requirements.txt
 ```
 
 ### 2. Download Models
+
+> **Before this step:** Create a free account at huggingface.co and accept the [Llama 3.2 license](https://huggingface.co/meta-llama/Llama-3.2-1B). Download is ~5 GB total and may take 10–40 minutes.
 
 ```bash
 # Login to HuggingFace (required for gated models)

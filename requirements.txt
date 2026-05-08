@@ -1,4 +1,7 @@
-llama-cpp-python>=0.2.90
+# llama-cpp-python MUST be installed separately with Metal flags (see README).
+# Running: pip install llama-cpp-python (without CMAKE_ARGS) will install a
+# CPU-only build that silently disables GPU acceleration.
+# Command: CMAKE_ARGS="-DGGML_METAL=on" pip install llama-cpp-python
 torch>=2.2.0
 transformers>=4.40.0
 huggingface-hub>=0.22.0
