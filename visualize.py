@@ -184,6 +184,8 @@ def plot_ptl(df: pd.DataFrame, plots_dir: Path) -> None:
         x = d["parameter_value"].values
         y = d["median"].values
         std = d["std"].values
+        # 0.675 ≈ z-score for the 25th/75th percentile of a normal distribution,
+        # so this band approximates the IQR (p25–p75) shaded confidence region
         lo = y - 0.675 * std
         hi = y + 0.675 * std
 

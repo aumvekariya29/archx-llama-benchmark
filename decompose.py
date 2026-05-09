@@ -125,6 +125,8 @@ class ComponentProfiler:
             def make_pre_hook(lbl):
                 def pre_hook(mod, inp):
                     sync_device(self.device)
+                    # id(mod) makes the key unique per module instance so hooks
+                    # across 16 layers with the same label don't overwrite each other
                     self._pending_start[lbl + str(id(mod))] = time.perf_counter()
                 return pre_hook
 
@@ -585,7 +587,10 @@ def simulate_q4_from_phase1(
         q4_ai = arith.get(comp, {}).get("arithmetic_intensity", 1.0) or 1.0
 
         # Scale: memory-bound components scale with bytes ratio,
-        # compute-bound stay similar
+        # compute-bound stay similar.
+        # AI < 2.0 FLOP/byte identifies memory-bound components (embedding, layernorm,
+        # attn_core at typical context lengths) that benefit proportionally from
+        # halving parameter size; compute-bound ops (MLP, QKV) gain less.
         if f16_ai < 2.0:  # memory-bound
             comp_ratio = ratio
         else:  # compute-bound

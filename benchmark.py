@@ -97,6 +97,7 @@ def detect_platform() -> str:
 
 def filter_outliers_iqr(data: list[float], multiplier: float = IQR_MULTIPLIER) -> list[float]:
     """Remove outliers using IQR method."""
+    # IQR requires at least 4 points to compute meaningful quartiles
     if len(data) < 4:
         return data
     q1 = np.percentile(data, 25)
@@ -153,6 +154,7 @@ def measure_ttft(llm: Llama, prompt_tokens: list[int]) -> float:
     """Measure time to first token (ms). Uses the streaming API."""
     llm.reset()
 
+    # top_k=1, temp=0.0: greedy decoding for deterministic, reproducible timings
     start = time.perf_counter()
     generator = llm.generate(prompt_tokens, top_k=1, top_p=1.0, temp=0.0)
     _ = next(generator)  # first generated token
